@@ -9170,11 +9170,11 @@ http://creativecommons.org/licenses/by-sa/4.0/                       </text>
 <instance part="P+5" gate="VCC" x="53.34" y="58.42" smashed="yes">
 <attribute name="VALUE" x="51.308" y="59.69" size="1.778" layer="96"/>
 </instance>
-<instance part="S2" gate="G$1" x="226.06" y="121.92" smashed="yes">
-<attribute name="NAME" x="220.98" y="132.08" size="1.778" layer="95" align="center"/>
-<attribute name="VALUE" x="226.822" y="129.54" size="1.778" layer="96" align="center"/>
+<instance part="S2" gate="G$1" x="213.36" y="127" smashed="yes" rot="MR180">
+<attribute name="NAME" x="208.28" y="116.84" size="1.778" layer="95" rot="MR180" align="center"/>
+<attribute name="VALUE" x="214.122" y="119.38" size="1.778" layer="96" rot="MR180" align="center"/>
 </instance>
-<instance part="GND4" gate="1" x="238.76" y="111.76"/>
+<instance part="GND4" gate="1" x="226.06" y="116.84"/>
 <instance part="+3V1" gate="G$1" x="63.5" y="114.3" smashed="yes">
 <attribute name="VALUE" x="61.468" y="115.57" size="1.778" layer="96"/>
 </instance>
@@ -9340,7 +9340,7 @@ http://creativecommons.org/licenses/by-sa/4.0/                       </text>
 <segment>
 <pinref part="S2" gate="G$1" pin="C"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="238.76" y1="119.38" x2="238.76" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="129.54" x2="226.06" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
@@ -9609,44 +9609,6 @@ http://creativecommons.org/licenses/by-sa/4.0/                       </text>
 <wire x1="111.76" y1="124.46" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ADC3" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="PC3(ADC3)"/>
-<wire x1="182.88" y1="124.46" x2="213.36" y2="124.46" width="0.1524" layer="91"/>
-<label x="187.96" y="124.46" size="1.778" layer="95"/>
-<pinref part="S2" gate="G$1" pin="8"/>
-</segment>
-</net>
-<net name="ADC2" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="PC2(ADC2)"/>
-<label x="187.96" y="127" size="1.778" layer="95"/>
-<pinref part="S2" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="119.38" x2="203.2" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="119.38" x2="203.2" y2="127" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="127" x2="182.88" y2="127" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC1" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="PC1(ADC1)"/>
-<wire x1="182.88" y1="129.54" x2="205.74" y2="129.54" width="0.1524" layer="91"/>
-<label x="187.96" y="129.54" size="1.778" layer="95"/>
-<pinref part="S2" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="116.84" x2="205.74" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="116.84" x2="205.74" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ADC0" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="PC0(ADC0)"/>
-<wire x1="182.88" y1="132.08" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
-<label x="187.96" y="132.08" size="1.778" layer="95"/>
-<pinref part="S2" gate="G$1" pin="4"/>
-<wire x1="213.36" y1="121.92" x2="208.28" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="121.92" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="/SS" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PB2(SS/OC1B)"/>
@@ -9764,6 +9726,34 @@ http://creativecommons.org/licenses/by-sa/4.0/                       </text>
 <label x="20.32" y="50.8" size="1.778" layer="95"/>
 <pinref part="JP3" gate="G$1" pin="3"/>
 <wire x1="20.32" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="1"/>
+<pinref part="U3" gate="G$1" pin="PC0(ADC0)"/>
+<wire x1="200.66" y1="132.08" x2="182.88" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="2"/>
+<pinref part="U3" gate="G$1" pin="PC1(ADC1)"/>
+<wire x1="200.66" y1="129.54" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="4"/>
+<pinref part="U3" gate="G$1" pin="PC2(ADC2)"/>
+<wire x1="200.66" y1="127" x2="182.88" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="S2" gate="G$1" pin="8"/>
+<pinref part="U3" gate="G$1" pin="PC3(ADC3)"/>
+<wire x1="200.66" y1="124.46" x2="182.88" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

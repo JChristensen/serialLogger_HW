@@ -26,6 +26,8 @@
 *.zip
 *.png
 *.xls
+*.xlsx
 Thumbs.db
 !board.png
 !schematic.png
+!partList.txt

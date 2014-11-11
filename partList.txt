@@ -1,0 +1,43 @@
+Partlist
+
+Exported from serialLogger.sch at 11/10/2014 7:54:04 PM
+
+EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part     Value             Device                Package              Library  Sheet
+
+C1       10uF              C-USM0805             M0805                _jc      1
+C2       10uF              C-USM0805             M0805                _jc      1
+C3       1uF               C-USM0805             M0805                _jc      1
+C4       10uF              C-USM0805             M0805                _jc      1
+C5       27pF              C-USM0805             M0805                _jc      1
+C6       27pF              C-USM0805             M0805                _jc      1
+C7       100nF             C-USM0805             M0805                _jc      1
+C8       100nF             C-USM0805             M0805                _jc      1
+C9       100nF             C-USM0805             M0805                _jc      1
+C10      100nF             C-USM0805             M0805                _jc      1
+C11      100nF             C-USM0805             M0805                _jc      1
+D1       Bfr Overrun (RED) LEDCHIPLED_1206       CHIPLED_1206         _jc      1
+D2       SD Activity (YEL) LEDCHIPLED_1206       CHIPLED_1206         _jc      1
+D3       Heartbeat (GRN)   LEDCHIPLED_1206       CHIPLED_1206         _jc      1
+D4       1N4148            DIODESOD-323F-A       SOD-323F-A           _jc      1
+J1       Ext Pwr           POWER-JACK            KLDX-0202            _jc      1
+JP1      FTDI              M06LOCK               1X06_LOCK            SparkFun 1
+JP2      ICSP              AVR_SPI_PRG_62X3_LOCK 2X3_LOCK             _jc      1
+JP3      Pwr Select        M04LOCK               1X04_LOCK            SparkFun 1
+L1       10uH              INDUCTORM0805         M0805                _jc      1
+R1       1K                R-US_M0805            M0805                _jc      1
+R2       330               R-US_M0805            M0805                _jc      1
+R3       1K                R-US_M0805            M0805                _jc      1
+R4       10K               R-US_M0805            M0805                _jc      1
+S1       Start/Stop        10-XXOCT              B3F-10XXOCT          _jc      1
+S2       Baud Select       OMRON-A6RS-102        OMRON-A6RS-102       _jc      1
+S3       RESET             10-XXOCT              B3F-10XXOCT          _jc      1
+U1       MCP1702           MCP1700SOT89          SOT89                _jc      1
+U2       MCP1700           MCP1700SOT23          SOT23                _jc      1
+U3       ATmega328P-AU     MEGA8-AI              TQFP32-08            atmel    1
+U4       74HC4050PW        4050PW                TSSOP16              40xx     1
+X1       MICROSD           MICROSD               MICROSD              adafruit 1
+Y1       16MHz             CRYSTALABM2           CRYSTAL-ABRACON-ABM2 _jc      1
